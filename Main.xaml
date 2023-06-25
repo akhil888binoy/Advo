@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,1014" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,1130" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -83,7 +83,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,949" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,1065" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="code" />
       <Variable x:TypeArguments="x:String" Name="techstack" />
@@ -103,7 +103,7 @@
         <OutArgument x:TypeArguments="x:String">[code]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,280" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f8cf81c0-9eca-4c4f-8ceb-8e160de1ba29" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: CodeEx.txt - toddyboy - Visual Studio Code" sap:VirtualizedContainerService.HintSize="484,396" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="f8cf81c0-9eca-4c4f-8ceb-8e160de1ba29" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -119,7 +119,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" />
+        <uix:TargetApp Area="-8, -8, 1382, 736" FilePath="C:\Users\user\AppData\Local\Programs\Microsoft VS Code\code.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP8SURBVFhHtZfdT1tlHMd/jJYC3RhQXAxK2sJaE73RaHZh4oVGL7z0PzBeaExs6cIKhdGWt9I6GK0LJup8Z+Nlg7W0a0eLVJO5bC6D9vSFmXhhmJKZbCRru7uxPP7Ow+NW8PQ5DMY3+Vyd5/l9vuc5pycp7EVe6p9/3Ti+cqNp7NZd3ZnVO7rR373s0t5HlCsc8QI44kQ5eIW8cPE+pWVmbb35iz/OsmV7kxcH4+8r7AsFsC+Q/zCG7m+iZXptXb8XRXQ9MTN0o3QLxlBBkubza+sGb+ZNtn130TpjJjj+E5HCGERhCQ5P3lllI3YejT02A13zpBTGWZRxYGN2lvru2LSUtBhDoMCFjXqyGOwRzcHj0XnojBE5DH4UcaADNb7s1/DZMhFR+7K/4cuhoRckIsorO6M3wRYl20FKWgxovNnT4MuSYsp92YLWm3mXOR+Fym1zN6EDh8tQ3jFXMAwsWAwXUMQBqr2Za+BFsQQNI5kh5gZtV+RIhS26Cu1zRA6xpLieEKI+PINvOwfYP5KJwkiGlKJqOH1V2xt/Z1/7pTxYLxE5Dtoi58STEkvTAtN5wgPE5606mVmGkygsxZDwEDrxd22NlGSfNZI/ZAt/TI+LBQtUS0mLoQtpieH0MgyjjIfjMoFjKNyCyhpefq7j4hE6rCi0wHkUcWBLN3JgKD0FQ2m8Yw7911GKx90Wphywhqca24P1bMSmYIGqlnN5woMtfZz9J1KTcAJFPNwJfNPnSW1bsINtkwwtMIUiDmzp46iPhSbAeYXApylZatyCXIHKlkkUcWBLN6JuQ/nREKF0/UzAgyIZ1J7URKMnVeoRbK9AozVYrzwazIAlSDbRGcfjRpEMSk8q0+AWXqPDioIFVM0TecJjQ26ZzUArCqWw4jfdlXgIgwLhUTYo5GrdwofMTUMLjKOIA6gss2Ewz5JSKFsDv9b1XX+rzCXkwIUyGapcwnijR6CPBAtUNJ/NER4gCsAcQNn/qW4NuOitYGoHkq+Wu4S/YCBJ5FC4kmlx/bYKVJr9n4MJhUWUmQK5Gov/beZ+lJq+RJ2iP5mGfhTJUDaQzNV5hI/0Z3KEBx2sMvlH4RM/EVGY/JdrzBfq6AWJiCXKt1lCRD+GIg5s7JNFLKHsS4SgDz9IMuh/RBEHNnJnUfYmxqAXRRz0P6CIAxu18yicS2PQs0RKoUMJDzZmd6lwLn0AThRKoPseRSVo+uruChux+ygdWMKB0i3ovrsnSdPptQcNI3++wbY/nSjsi++BffEegn/LNtB9i8Ii8K4fNPhufcO2PP1giVegG0t0LxJFT4poUSry/Jd7LN6UrhsvHzr19y/PnFr959nR27c13hU3u7IlAP8Cvpfy85QTSv8AAAAASUVORK5CYII=" InformativeScreenshot="314452b026aa1d0d5b56179d610ee453.png" Selector="&lt;wnd app='code.exe' cls='Chrome_WidgetWin_1' title='CodeEx.txt - toddyboy - Visual Studio Code' /&gt;" Title="CodeEx.txt - toddyboy - Visual Studio Code" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
